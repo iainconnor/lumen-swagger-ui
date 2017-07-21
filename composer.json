@@ -1,0 +1,21 @@
+{
+  "name": "iainconnor/laravel-swagger-ui",
+  "description": "Swagger UI for Laravel.",
+  "type": "library",
+  "require": {
+    "swagger-api/swagger-ui": "^3.0",
+    "laravel/lumen-framework": "^5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "IainConnor\\": "src/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Iain Connor",
+      "email": "iainconnor@gmail.com"
+    }
+  ]
+}
