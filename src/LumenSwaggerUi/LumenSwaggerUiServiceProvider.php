@@ -24,8 +24,6 @@ class LumenSwaggerUiServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        require_once __DIR__ . '/../../vendor/autoload.php'; // @TODO Remove me.
-
         $this->publishes([$this->getConfigPath() => $this->app->basePath() .
                                                     "/config/" .
                                                     LumenSwaggerUiServiceProvider::CONFIG_NAME .
