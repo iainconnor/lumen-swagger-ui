@@ -158,7 +158,7 @@ class LumenSwaggerUiController extends Controller
      */
     protected function getVendorDir()
     {
-        $vendorDir = realpath(__DIR__ . "/../../vendor");
+        $vendorDir = realpath(__DIR__ . "/../../vendor") ?: realpath(__DIR . "/../../../../../vendor");
 
         if (!is_dir($vendorDir)) {
             throw new VendorNotFoundException();
