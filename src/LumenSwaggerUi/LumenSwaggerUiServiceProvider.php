@@ -29,7 +29,7 @@ class LumenSwaggerUiServiceProvider extends ServiceProvider
                                                     LumenSwaggerUiServiceProvider::CONFIG_NAME .
                                                     ".php"]);
 
-        $this->app->group(['namespace' => 'IainConnor\LumenSwaggerUi'], function ($app) {
+        $this->app->router->group(['namespace' => 'IainConnor\LumenSwaggerUi'], function ($app) {
             require __DIR__ . "/../../routes/docs.php";
         });
     }
